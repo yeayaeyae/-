@@ -1,0 +1,16 @@
+public class MainArray {
+    public static void main(String[] args) {
+        char[] spisok = {'1','D','3','B','c','5','D'};
+
+        StringBuilder numbers = new StringBuilder();
+        StringBuilder letters = new StringBuilder();
+
+        for (char ch : spisok) {
+            if (Character.isDigit(ch)) numbers.append(ch);
+            else if (Character.isLetter(ch)) letters.append(ch);
+        }
+
+        System.out.println("Цифры: " + numbers);
+        System.out.println("Буквы: " + letters);
+    }
+}
